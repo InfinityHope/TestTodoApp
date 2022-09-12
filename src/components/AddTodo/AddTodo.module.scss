@@ -1,0 +1,28 @@
+.addTodo {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  input {
+    width: 70%;
+    height: 30px;
+    border: none;
+    border-bottom: 2px indigo solid;
+    font-size: 20px;
+    outline: none;
+  }
+  button {
+    width: 20%;
+    border: 2px indigo solid;
+    background-color: transparent;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all .3s ease-in-out;
+    &:hover {
+      background-color: indigo;
+      color: #fff;
+    }
+  }
+}

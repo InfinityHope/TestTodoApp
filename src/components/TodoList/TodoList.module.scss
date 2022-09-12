@@ -1,0 +1,30 @@
+.todoList {
+  padding: 8px;
+  background-color: #fff;
+  border: 2px solid indigo;
+  border-right: none;
+  border-radius: 10px 0 0 10px;
+  ul {
+    list-style-type: none;
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 15px;
+      font-size: 18px;
+      color: darkgray;
+      cursor: pointer;
+      transition: color .3s ease;
+      span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        &:hover {
+          color: tomato;
+        }
+      }
+    }
+  }
+}
+
+
