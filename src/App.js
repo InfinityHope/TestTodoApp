@@ -1,5 +1,4 @@
 import Header from './components/Header'
-import Split from 'react-split'
 import TodoList from './components/TodoList'
 import Interaction from './components/Interaction'
 import { useEffect, useState } from 'react'
@@ -119,18 +118,7 @@ function App() {
 				onChangeSearchValue={onChangeSearchValue}
 			/>
 			<div className="container">
-				<Split
-					sizes={[15, 85]}
-					minSize={320}
-					expandToMin={false}
-					gutterSize={5}
-					snapOffset={30}
-					dragInterval={1}
-					direction="horizontal"
-					cursor="col-resize"
-					className={'app'}
-					style={{ display: 'flex' }}
-				>
+				<div className="app">
 					<TodoList
 						todos={todos}
 						searchValue={searchValue}
@@ -146,7 +134,7 @@ function App() {
 						status={status}
 						changeStatus={changeStatus}
 					/>
-				</Split>
+				</div>
 				<AddTodo
 					addTodo={addTodo}
 					title={title}

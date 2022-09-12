@@ -27,19 +27,11 @@ h1  {
 }
 
 .app {
+  display: flex;
   margin-top: 25px;
   min-height: 500px;
   background-color: indigo;
   color: #fff;
   font-size: 16px;
   border-radius: 10px;
-}
-
-.gutter {
-  background-color: #fff;
-  border: 2px solid indigo;
-}
-
-.gutter:hover {
-  cursor: e-resize;
 }
